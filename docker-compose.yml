@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  backend:
+    build: 
+      context: ./product-api
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  frontend:
+    build: 
+      context: ./product-app
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
