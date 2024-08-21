@@ -13,3 +13,26 @@ div{
       radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
     background-attachment: fixed;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+app-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
