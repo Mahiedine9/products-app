@@ -1,0 +1,19 @@
+<div class="product-box">
+  <h2>Add Product</h2>
+  <form (ngSubmit)="onSubmit()" #productForm="ngForm">
+    <div class="user-box">
+      <input type="text" name="productName" [(ngModel)]="product.name" required>
+      <label>Product Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="productPrice" [(ngModel)]="product.price" required>
+      <label>Product Price</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="productId" [(ngModel)]="product.id" required>
+      <label>Product Id</label>
+    </div>
+    <button type="submit">Add Product</button>
+    <button type="button" (click)="onCancel()">Cancel</button> 
+  </form>
+</div>

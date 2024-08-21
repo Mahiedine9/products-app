@@ -1,0 +1,12 @@
+<div class="header">
+    <h1>Product List</h1>
+    <button (click)="goToAddProduct()" class="add-product-btn">Add Product</button>
+  </div>
+  
+  <div class="product-list">
+    <app-product
+      *ngFor="let product of products"
+      [product]="product" class="product-card">
+    </app-product>
+  </div>
+  
